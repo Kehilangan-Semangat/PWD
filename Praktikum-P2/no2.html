@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz</title>
+</head>
+<body>
+    <h2>Form Mahasigma</h2>
+    <form method="post">
+        <fieldset>
+            <legend>Data Mahasigma</legend>
+        <table>
+            
+            <tr>
+                <td>Nama</td>
+                <td>:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>NPM</td>
+                <td>:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Kelas</td>
+                <td>:</td>
+                <td>
+                    <select name="kelas">
+                        <option selected disabled>Pilih Kelas</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="NR">Necromancer</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>:</td>
+                <td>
+                    <input type="radio" name = "jk" value="pria">pria
+                    <input type="radio" name = "jk" value="wanita">wanita
+                </td>
+            </tr>
+        </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Tempat Tinggal Mahasigma</legend>
+            <table>
+                <tr>
+                    <td>Alamat</td>
+                    <td>:</td>
+                    <td><textarea name="alamat"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Kecamatan</td>
+                    <td>:</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Kabupaten/Kotamadya</td>
+                    <td>:</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Provinsi</td>
+                    <td>:</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Kode Pos</td>
+                    <td>:</td>
+                    <td><input type="text"></td>
+                </tr>
+            </table>
+        </fieldset>
+            
+        <fieldset>
+            <legend>Lain-Lainnya</legend>
+            <table>
+                <h4>Lain-lannya</h4>
+                
+                <tr>
+                    <td>Bahasa Pemrograman</td>
+                    <td>:</td>
+                    <td>
+                        <input type="checkbox" name="matkul" value="C / C++">C / C++
+                        <input type="checkbox" name="matkul" value="Go lang">Go Lang
+                        <input type="checkbox" name="matkul" value="Python">Python
+                        <input type="checkbox" name="matkul" value="Lainnya">Lainnya <br>
+                        <input type="checkbox" name="matkul" value="PHP">PHP
+                        <input type="checkbox" name="matkul" value="Javascript">Javascript
+                        <input type="checkbox" name="matkul" value="Ruby">Ruby
+                    </td>
+                </tr>
+                <tr>
+                    <td>Kegiatan</td>
+                    <td>:</td>
+                    <td>
+                        <input type="checkbox" name="matkul" value="organisasi Kemahasiswaan">Organisasi Kemahasiswaan
+                        <input type="checkbox" name="matkul" value="Bidang Olahraga">Bidang Olahraga
+                        <input type="checkbox" name="matkul" value="Lainnya">Lainnya <br>
+                        <input type="checkbox" name="matkul" value="organisasi di Luar Kampus">Organisasi di Luar Kampus
+                        <input type="checkbox" name="matkul" value="Bidang Seni">Bidang Seni
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+            <input type="submit" name="submit">
+            <input type="reset" name="reset">
+        </form>    
+    </body>
+    </html>
