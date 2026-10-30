@@ -1,0 +1,393 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html
+{
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
+}
+
+body
+{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #080b11;
+    color: #c9d1d9;
+    line-height: 1.8;
+}
+
+.navbar
+{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(11, 15, 23, 0.95);
+    border-bottom: 1px solid #1c2436;
+    backdrop-filter: blur(8px);
+}
+
+.navbar-container
+{
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.nav-brand
+{
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #f0f6fc;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+.nav-brand span
+{
+    color: #F7C2C9;
+}
+
+.nav-links
+{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.nav-links a
+{
+    color: #8b949e;
+    text-decoration: none;
+    font-size: 0.74rem;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover
+{
+    color: #ffffff;
+}
+
+.scroll-badge
+{
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 0.8rem;
+    color: #F7C2C9;
+    background-color: #121824;
+    border: 1px solid #222d42;
+    padding: 5px 12px;
+    border-radius: 4px;
+    white-space: nowrap;
+}
+
+.page-wrapper
+{
+    max-width: 1240px;
+    margin: 30px auto;
+    padding: 0 24px 60px 24px;
+    display: grid;
+    grid-template-columns: 1fr 310px;
+    gap: 28px;
+    align-items: start;
+}
+
+.main-article
+{
+    background-color: #0f141f;
+    border: 1px solid #1b2334;
+    border-radius: 6px;
+    padding: 36px 34px;
+}
+
+header
+{
+    border-bottom: 1px solid #1c2436;
+    padding-bottom: 22px;
+    margin-bottom: 28px;
+}
+
+.meta-info
+{
+    font-size: 0.85rem;
+    color: #8b949e;
+    margin-top: 10px;
+}
+
+h1
+{
+    color: #f0f6fc;
+    font-size: 1.85rem;
+    line-height: 1.35;
+    font-weight: 700;
+}
+
+h2
+{
+    color: #f0f6fc;
+    font-size: 1.35rem;
+    margin-top: 38px;
+    margin-bottom: 14px;
+    border-bottom: 1px solid #1c2436;
+    padding-bottom: 8px;
+    font-weight: 600;
+}
+
+h3
+{
+    color: #F7C2C9;
+    font-size: 1.1rem;
+    margin-top: 24px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+p
+{
+    margin-bottom: 16px;
+    text-align: justify;
+    font-size: 0.98rem;
+    color: #b1bac4;
+}
+
+ul, ol
+{
+    margin-left: 24px;
+    margin-bottom: 18px;
+    color: #b1bac4;
+}
+
+li
+{
+    margin-bottom: 7px;
+}
+
+.callout-box
+{
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    background-color: #181318;
+    border-left: 3px solid #F7C2C9;
+    border-radius: 0 4px 4px 0;
+    padding: 16px 20px;
+    margin: 24px 0;
+    color: #d2c5c9;
+    font-size: 0.94rem;
+}
+
+.callout-icon
+{
+    font-size: 1.25rem;
+    line-height: 1.2;
+}
+
+.callout-title
+{
+    font-weight: 700;
+    color: #F7C2C9;
+    margin-right: 6px;
+}
+
+.profile-table-container
+{
+    background-color: #121824;
+    border: 1px solid #1c2538;
+    border-radius: 4px;
+    padding: 18px 20px;
+    margin: 22px 0;
+}
+
+.profile-table-container table
+{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.profile-table-container td
+{
+    padding: 7px 10px;
+    vertical-align: top;
+    font-size: 0.93rem;
+    border-bottom: 1px solid #182030;
+}
+
+.profile-table-container tr:last-child td
+{
+    border-bottom: none;
+}
+
+.profile-table-container td:first-child
+{
+    font-weight: 600;
+    width: 32%;
+    color: #F7C2C9;
+}
+
+.content-table
+{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 22px 0;
+    font-size: 0.93rem;
+}
+
+.content-table th, .content-table td
+{
+    border: 1px solid #1d273a;
+    padding: 11px 13px;
+    text-align: left;
+}
+
+.content-table th
+{
+    background-color: #141c2c;
+    color: #f0f6fc;
+    font-weight: 600;
+}
+
+.content-table tr:nth-child(even)
+{
+    background-color: #111724;
+}
+
+blockquote
+{
+    background-color: #131926;
+    border-left: 3px solid #388bfd;
+    padding: 14px 20px;
+    margin: 20px 0;
+    font-style: italic;
+    color: #8b949e;
+    border-radius: 0 4px 4px 0;
+}
+
+.sidebar-card
+{
+    position: sticky;
+    top: 76px;
+    background-color: #0f141f;
+    border: 1px solid #1b2334;
+    border-radius: 6px;
+    padding: 22px 20px;
+    font-size: 0.88rem;
+}
+
+.sidebar-title
+{
+    font-size: 0.98rem;
+    font-weight: 700;
+    color: #f0f6fc;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #1c2436;
+    padding-bottom: 10px;
+}
+
+.sidebar-item
+{
+    margin-bottom: 13px;
+}
+
+.sidebar-label
+{
+    color: #8b949e;
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 2px;
+}
+
+.sidebar-value
+{
+    color: #f0f6fc;
+    font-weight: 500;
+}
+
+footer
+{
+    margin-top: 45px;
+    padding-top: 20px;
+    border-top: 1px solid #1c2436;
+    text-align: center;
+    font-size: 0.84rem;
+    color: #6e7681;
+}
+
+#btnBackToTop
+{
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    display: none;
+    opacity: 0.6;
+    width: 44px;
+    height: 48px;
+    background-color: #0b0f17;
+    border: 1px solid #243046;
+    border-radius: 4px;
+    color: #F7C2C9;
+    cursor: pointer;
+    transition: opacity 0.2s ease, border-color 0.2s ease;
+    z-index: 999;
+    text-align: center;
+    padding-top: 4px;
+}
+
+#btnBackToTop:hover
+{
+    opacity: 1;
+    border-color: #F7C2C9;
+}
+
+.btn-arrow
+{
+    display: block;
+    font-size: 15px;
+    line-height: 1.1;
+}
+
+.btn-text
+{
+    display: block;
+    font-size: 8.5px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #8b949e;
+    margin-top: 2px;
+}
+
+#btnBackToTop:hover .btn-text
+{
+    color: #ffffff;
+}
+
+@media (max-width: 900px)
+{
+    .page-wrapper
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar-card
+    {
+        position: static;
+        order: -1;
+    }
+
+    .nav-links
+    {
+        display: none;
+    }
+}
