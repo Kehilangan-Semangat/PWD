@@ -1,0 +1,205 @@
+body 
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header 
+{
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 
+{
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.search-bar 
+{
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 250px;
+}
+
+.btn-keranjang-toggle 
+{
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.container 
+{
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    position: relative;
+}
+
+.produk-container 
+{
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    align-content: start;
+}
+
+.produk-card 
+{
+    background: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.produk-card h3 
+{
+    margin: 10px 0 5px;
+    color: #2c3e50;
+}
+
+.produk-card p 
+{
+    margin: 5px 0;
+    color: #7f8c8d;
+}
+
+.btn-tambah 
+{
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: auto;
+}
+
+.btn-tambah:hover 
+{
+    background-color: #2980b9;
+}
+
+#panel-keranjang 
+{
+    width: 300px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    display: none;
+    height: fit-content;
+    position: sticky;
+    top: 80px;
+}
+
+#panel-keranjang h2 
+{
+    margin-top: 0;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.list-keranjang 
+{
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+.item-keranjang 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+    display: none;
+}
+
+.btn-hapus 
+{
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.keranjang-footer 
+{
+    border-top: 2px solid #eee;
+    padding-top: 10px;
+}
+
+.keranjang-footer p 
+{
+    font-weight: bold;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-aksi 
+{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.btn-kosongkan 
+{
+    background-color: #95a5a6;
+    color: white;
+}
+
+.btn-checkout 
+{
+    background-color: #2ecc71;
+    color: white;
+}
+
+#ringkasan-checkout 
+{
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    display: none;
+    max-width: 500px;
+    margin: 50px auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}

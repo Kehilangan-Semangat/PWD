@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Online</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+    <header id="header-utama">
+        <h1>Toko JUMP</h1>
+        <input type="text" id="input-cari" class="search-bar" placeholder="Cari produk...">
+        <button id="btn-toggle-keranjang" class="btn-keranjang-toggle">Keranjang (<span
+                id="jml-item">0</span>)</button>
+    </header>
+
+    <div id="halaman-utama" class="container">
+        <div id="daftar-produk" class="produk-container"></div>
+
+        <div id="panel-keranjang">
+            <h2>Keranjang Belanja</h2>
+            <ul id="list-item-keranjang" class="list-keranjang"></ul>
+            <div class="keranjang-footer">
+                <p><span>Total Harga:</span> <span id="total-harga">Rp 0</span></p>
+                <button id="btn-kosongkan" class="btn-aksi btn-kosongkan">Kosongkan Keranjang</button>
+                <button id="btn-checkout" class="btn-aksi btn-checkout">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="ringkasan-checkout">
+        <h2 style="color: #2ecc71;">Checkout Berhasil!</h2>
+        <p>Hatur Thank You, <strong id="nama-pembeli"></strong>.</p>
+        <p>Pesanan Anda telah diproses dengan total pembayaran <strong id="total-checkout"></strong>.</p>
+        <button onclick="location.reload()" style="margin-top: 20px; padding: 10px 20px; cursor: pointer;">Kembali ke
+            Toko</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
